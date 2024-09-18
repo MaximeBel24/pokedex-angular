@@ -1,1 +1,12 @@
-<h1>{{ title }}</h1>
+<h1>Pokédex</h1>
+<h2>{{ name() }}</h2>
+<p>Taille : {{ size() }}</p>
+<p>Points de vie : {{ life() }}</p>
+<button (click)="incrementLife()">+</button>
+<button (click)="decrementLife()">-</button>
+<!--<hr>
+<h1>Valeur actuelle du compteur : {{ counter() }}</h1>
+<h1>Double de la valeur actuelle : {{ doubleCounter() }}</h1>
+<h1>Triple de la valeur actuelle : {{ tripleCounter() }}</h1>
+<button (click)="increment()">Incrémenter</button>
+<button (click)="reset()">Reset</button> -->
