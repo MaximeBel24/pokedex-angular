@@ -1,10 +1,25 @@
 <h1>Pokédex</h1>
+<img [src]="imageSrc()" [alt]="name()">
 <h2>{{ name() }}</h2>
 <p>Taille : {{ size() }}</p>
 <p>Points de vie : {{ life() }}</p>
-<button (click)="incrementLife()">+</button>
-<button (click)="decrementLife()">-</button>
-<!--<hr>
+ 
+<button (click)="decrementLife()" [disabled]="life() <= 0">-</button>
+<button (click)="incrementLife()" [disabled]="life() >= 30">+</button>
+
+
+<!--@if(life() < 30){
+    <button (click)="incrementLife()">+</button>
+} @if(life() == 30){
+    <p>Le pokemon est full-life</p>
+}@if (life() == 0){
+    <p>Le pokemon est KO.</p>
+}
+
+@if (life() > 0){
+    <button (click)="decrementLife()">-</button>
+}
+<hr>
 <h1>Valeur actuelle du compteur : {{ counter() }}</h1>
 <h1>Double de la valeur actuelle : {{ doubleCounter() }}</h1>
 <h1>Triple de la valeur actuelle : {{ tripleCounter() }}</h1>
