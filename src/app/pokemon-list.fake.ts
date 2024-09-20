@@ -88,7 +88,7 @@ export const POKEMON_LIST: PokemonList = [
     life: 19,
     damage: 3,
     picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png',
-    types: ['Normal'],
+    types: ['Sol'],
     created: new Date(),
   },
   {
@@ -102,7 +102,7 @@ export const POKEMON_LIST: PokemonList = [
   },
   {
     id: 12,
-    name: 'Groupix',
+    name: 'Goupix',
     life: 17,
     damage: 8,
     picture: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png',

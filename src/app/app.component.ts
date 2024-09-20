@@ -1,55 +1,56 @@
-import { Component, computed, effect, signal } from '@angular/core';
+import { Component, computed, effect, inject, signal } from '@angular/core';
+import { Pokemon } from './pokemon.model';
+import { PokemonBorderDirective } from './pokemon-border.directive';
+import { DatePipe } from '@angular/common';
+import { PokemonService } from './pokemon.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
+  imports: [PokemonBorderDirective, DatePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
 
-  name = signal('Pikachu');
-  life = signal(21);
-  imageSrc = signal('https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png');
-  size = computed(() => {
-    if (this.life() <= 15) {
+  private readonly pokemonService = inject(PokemonService);
+
+  pokemons = computed(() => {
+    if(this.searchTerm() === ''){
+      return this.pokemonService.getPokemonList();
+    }
+    return this.pokemonService.getPokemonListByNamesContain(this.searchTerm());
+  });
+
+  readonly pokemonList = signal(this.pokemonService.getPokemonList());
+  readonly pokemonListFiltered = computed(() => {
+    return this.pokemonList().filter((pokemon) =>
+      pokemon.name
+        .toLowerCase()
+        .includes(this.searchTerm().trim().toLowerCase())
+    );
+  }); 
+
+  readonly searchTerm = signal('');
+
+  size(pokemon : Pokemon){
+    if (pokemon.life <= 15) {
       return 'Petit';
     }
 
-    if (this.life() >= 25) {
+    if (pokemon.life >= 25) {
       return 'Grand';
     }
 
     return 'Moyen';
-  });
-
-  // counter = signal(0);
-  // doubleCounter = computed(() => this.counter() * 2)
-  // tripleCounter = computed(() => this.counter() * 3)
-
-  // constructor() {
-  //   effect(() => {
-  //     console.log('Le compteur a été mis à jour :', this.counter());
-  //     console.log('Le compteur double a été mis à jour :', this.doubleCounter());
-  //     console.log('Le compteur triple a été mis à jour :', this.tripleCounter());
-  //   })
-  // }
-
-  incrementLife(){
-    this.life.update(n => n + 1);
   }
 
-  decrementLife(){
-    this.life.update(n => n - 1);
+  incrementLife(pokemon: Pokemon){
+    pokemon.life = pokemon.life + 1
   }
 
-  // increment(){
-  //   this.counter.update(n => n + 1);
-  // }
+  decrementLife(pokemon: Pokemon){
+    pokemon.life = pokemon.life - 1
+  }
 
-  // reset(){
-  //   this.counter.set(0);
-  //   console.clear()
-  // }
 }
