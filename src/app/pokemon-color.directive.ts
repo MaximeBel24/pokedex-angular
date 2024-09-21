@@ -1,10 +1,11 @@
 import { Directive, ElementRef, HostListener, input } from '@angular/core';
 
 @Directive({
-  selector: '[appPokemonBorder]',
+  selector: '[appPokemonColor]',
   standalone: true
 })
-export class PokemonBorderDirective {
+export class PokemonColorDirective {
+
   pokemonType = input.required<string>();
   private initialColor: string;
 

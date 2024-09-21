@@ -17,9 +17,9 @@ export class PokemonService {
 
   //Retourne la liste des pokemons dont le nom contient la chaine de caractères passée en paramètre
 
-  getPokemonListByNamesContain(name: string): PokemonList{
-    return POKEMON_LIST.filter((pokemon) => pokemon.name.toLowerCase().includes(name.toLowerCase()));
-  }
+  // getPokemonListByNamesContain(name: string): PokemonList{
+  //   return POKEMON_LIST.filter((pokemon) => pokemon.name.toLowerCase().includes(name.toLowerCase()));
+  // }
 
   //Retourne un pokemon en fonction de son id
 
