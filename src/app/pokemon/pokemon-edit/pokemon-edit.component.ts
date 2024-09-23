@@ -41,7 +41,7 @@ export class PokemonEditComponent {
   }
 
   // Add or remove a given type in the selected Pokemon list.
-  onpokemonTypeChange(type: string, isChecked: boolean): void{
+  onPokemonTypeChange(type: string, isChecked: boolean): void{
     if (isChecked) {
       const control = new FormControl(type);
       this.pokemonTypeList.push(control);

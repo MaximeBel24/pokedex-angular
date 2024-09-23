@@ -47,11 +47,16 @@
                   <tr>
                     <th scope="row">Types</th>
                     <td>
+                      @for (type of pokemonTypeList.controls; track type; let index = $index) {
+                        <button type="button" class="btn btn-secondary btn-sm rounded-pill m-1" (click)="pokemonTypeList.removeAt(index)">
+                          {{ type.value }} <span class="badge"></span>
+                        </button>
+                      }
                       <div class="row mt-3">
                         @for(type of pokemonService.getPokemonTypeList(); track type) {
                         <div class="col-md-4">
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" [value]="type" [id]="type"/>
+                            <input #checkbox class="form-check-input" type="checkbox" [checked]="isPokemonTypeSelected(type)" (change)="onPokemonTypeChange(type, checkbox.checked)" [value]="type" [id]="type"/>
                             <label class="form-check-label" [for]="type">
                               {{ type }}
                             </label>
