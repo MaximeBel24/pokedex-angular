@@ -1,13 +1,15 @@
 import { Component, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { PokemonService } from '../../pokemon.service';
-import { DatePipe } from '@angular/common';
+import { DatePipe, JsonPipe } from '@angular/common';
 import { FormArray, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { PokemonColorDirective } from '../../pokemon-color.directive';
+import { getPokemonColor, Pokemon } from '../../pokemon.model';
 
 @Component({
   selector: 'app-pokemon-edit',
   standalone: true,
-  imports: [RouterLink, DatePipe, ReactiveFormsModule],
+  imports: [RouterLink, DatePipe, ReactiveFormsModule, JsonPipe ,PokemonColorDirective],
   templateUrl: './pokemon-edit.component.html',
   styles: ``
 })
@@ -49,6 +51,14 @@ export class PokemonEditComponent {
       const index = this.pokemonTypeList.controls.map((control) => control.value).indexOf(type);
       this.pokemonTypeList.removeAt(index);
     }
+  }
+
+  getPokemonColor(type: string){
+    return getPokemonColor(type)
+  }
+
+  onSubmit() {
+    console.log(this.form.value)
   }
 }
 

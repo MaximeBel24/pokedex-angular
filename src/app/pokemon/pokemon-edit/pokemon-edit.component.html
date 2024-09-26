@@ -5,7 +5,7 @@
           <img [src]="pokemon().picture" class="img-fluid rounded-start" [alt]="pokemon().name"/>
         </div>
         <div class="col-md-8">
-          <form [formGroup]="form">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="card-body">
               <h2 class="card-title">{{ pokemon().name }}</h2>
               <table class="table">
@@ -24,7 +24,7 @@
                           -
                         </button>
                         <input type="number" class="form-control text-center" formControlName="life">
-                        <button type="button" class="btn btn-outline-secondary" disabled>
+                        <button type="button" class="btn btn-outline-secondary"  disabled>
                           +
                         </button>
                       </div>
@@ -48,8 +48,9 @@
                     <th scope="row">Types</th>
                     <td>
                       @for (type of pokemonTypeList.controls; track type; let index = $index) {
-                        <button type="button" class="btn btn-secondary btn-sm rounded-pill m-1" (click)="pokemonTypeList.removeAt(index)">
-                          {{ type.value }} <span class="badge"></span>
+                        <button type="button" class="btn btn-secondary btn-sm rounded-pill m-1" (click)="pokemonTypeList.removeAt(index)" [style.backgroundColor]="getPokemonColor(type.value)" [style.color]="type.value === 'Electrik' ? 'black' : 'white'">
+                          {{ type.value }} 
+                          <span class="badge" [style.color]="type.value === 'Electrik' ? 'black' : 'white'">x</span>
                         </button>
                       }
                       <div class="row mt-3">
@@ -82,3 +83,7 @@
       </div>
     </div>
   </div>
+
+  <pre>
+    {{ form.value | json }}
+  </pre>

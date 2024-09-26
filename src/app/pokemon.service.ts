@@ -46,15 +46,15 @@ export class PokemonService {
       'Fée',
       'Electrik',
       'Normal',
-      'Combat',
+      // 'Combat',
       'Sol',
-      'Roche',
-      'Spectre',
-      'Acier',
-      'Glace',
-      'Dragon',
-      'Ténèbres',
-      'Psy'
+      // 'Roche',
+      // 'Spectre',
+      // 'Acier',
+      // 'Glace',
+      // 'Dragon',
+      // 'Ténèbres',
+      // 'Psy'
     ]
   }
 }
