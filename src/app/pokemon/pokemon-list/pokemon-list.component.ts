@@ -38,12 +38,4 @@ export class PokemonListComponent {
 
     return 'Moyen';
   }
-
-  incrementLife(pokemon: Pokemon){
-    pokemon.life = pokemon.life + 1
-  }
-
-  decrementLife(pokemon: Pokemon){
-    pokemon.life = pokemon.life - 1
-  }
 }

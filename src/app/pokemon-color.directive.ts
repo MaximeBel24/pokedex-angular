@@ -16,24 +16,19 @@ export class PokemonColorDirective {
   }
 
   @HostListener('mouseenter') onMouseEnter() {
-    // const borderColor = getPokemonBorderColor(this.pokemonType())
+    const borderColor = getPokemonColor(this.pokemonType())
     // const backgroundColor = getPokemonBackgroundColor(this.pokemonType())
     // const textColor = getPokemonTextColor(this.pokemonType())
     const color = getPokemonColor(this.pokemonType())
+    this.setColor(borderColor);
   }
 
   @HostListener('mouseleave') onMouseLeave() {
     const borderColor = this.initialColor
-    const backgroundColor = this.initialColor
-    const textColor = this.initialColor
+    this.setColor(borderColor);
   }
 
-  private setColor(
-    borderColor: string,
-    backgroundColor: string, 
-    textColor: string) {
+  private setColor(borderColor: string,) {
     this.el.nativeElement.style.borderColor = borderColor;
-    this.el.nativeElement.style.backgroundColor = backgroundColor;
-    this.el.nativeElement.style.color = textColor;
   }
 }
