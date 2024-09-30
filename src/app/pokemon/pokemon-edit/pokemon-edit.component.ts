@@ -1,10 +1,12 @@
-import { Component, inject, signal } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Component, computed, effect, inject, signal } from '@angular/core';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { PokemonService } from '../../pokemon.service';
 import { DatePipe, JsonPipe } from '@angular/common';
 import { FormArray, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { PokemonColorDirective } from '../../pokemon-color.directive';
-import { getPokemonColor, POKEMON_RULES } from '../../pokemon.model';
+import { getPokemonColor, Pokemon, POKEMON_RULES } from '../../pokemon.model';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { catchError, map, of } from 'rxjs';
 
 @Component({
   selector: 'app-pokemon-edit',
@@ -14,33 +16,73 @@ import { getPokemonColor, POKEMON_RULES } from '../../pokemon.model';
   styles: ``
 })
 export class PokemonEditComponent {
+
+  readonly router = inject(Router)
+
   readonly route = inject(ActivatedRoute)
+
   readonly pokemonService = inject(PokemonService)
+
   readonly pokemonId = Number(this.route.snapshot.paramMap.get('id'));
-  readonly pokemon = signal(
-    this.pokemonService.getPokemonById(this.pokemonId)
-  ).asReadonly();
+
+  readonly pokemonResponse = toSignal(
+    this.pokemonService.getPokemonById(this.pokemonId).pipe(
+      map((value) => ({value, error:undefined})),
+      catchError((error) => of({ value: undefined, error}))
+    )
+  );
+
+  readonly loading = computed(() => !this.pokemonResponse());
+
+  readonly error = computed(() => this.pokemonResponse()?.error);
+
+  readonly pokemon = computed(() => this.pokemonResponse()?.value);
+
   readonly form = new FormGroup({
-    name: new FormControl(this.pokemon().name, [
+
+    name: new FormControl('', [
       Validators.required,
       Validators.minLength(POKEMON_RULES.MIN_NAME),
       Validators.maxLength(POKEMON_RULES.MAX_NAME),
       Validators.pattern(POKEMON_RULES.NAME_PATTERN)
     ]),
-    life: new FormControl(this.pokemon().life),
-    damage: new FormControl(this.pokemon().damage),
+
+    life: new FormControl(),
+
+    damage: new FormControl(),
+
     types: new FormArray(
-      this.pokemon().types.map((type) => new FormControl(type)),
+      [],
       [
-        Validators.required,
+        Validators.required, 
         Validators.maxLength(POKEMON_RULES.MAX_TYPES)
       ]
     )
   })
+  
   readonly POKEMON_RULES = signal(POKEMON_RULES).asReadonly();
+
   // Get the selected Pokemon list by user
   get pokemonTypeList(): FormArray {
     return this.form.get('types') as FormArray;
+  }
+
+  constructor() {
+    // Cette fonction se déclenche une seule fois à la réception de la requête HTTP.
+    effect(() => {
+      const pokemon = this.pokemon();
+
+      if(pokemon) {
+        this.form.patchValue({
+          name: pokemon.name,
+          life: pokemon.life,
+          damage: pokemon.damage,
+        });
+        pokemon.types.forEach((type) => {
+          this.pokemonTypeList.push(new FormControl(type));
+        })
+        }
+      })
   }
 
   // Return if given type is already selected by user or not.
@@ -62,7 +104,22 @@ export class PokemonEditComponent {
   }
 
   onSubmit() {
-    console.log(this.form.value)
+    const isFormValid= this.form.valid;
+    const pokemon = this.pokemon();
+    
+    if (isFormValid && pokemon) {
+      const  updatedPokemon: Pokemon = {
+        ...pokemon,
+        name: this.pokemonName.value,
+        life: this.pokemonLife.value,
+        damage: this.pokemonDamage.value,
+        types: this.pokemonTypeList.value,
+      };
+
+      this.pokemonService.updatePokemon(updatedPokemon).subscribe(() => {
+        this.router.navigate(['/pokemons', this.pokemonId])
+      })
+    }
   }
 
   getPokemonColor(type: string){
