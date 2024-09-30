@@ -12,6 +12,11 @@ export class PokemonService {
   private readonly http = inject(HttpClient);
   private readonly POKEMON_API_URL = 'http://localhost:3000/pokemons'
 
+  // Ajoute un pokémon.
+  addPokemon(pokemon: Omit<Pokemon, 'id'>): Observable<Pokemon> {
+    return this.http.post<Pokemon>(this.POKEMON_API_URL, pokemon);
+  }
+
   //Retourne la liste des pokemons
   getPokemonList(): Observable<PokemonList>{
     return this.http.get<PokemonList>(this.POKEMON_API_URL);

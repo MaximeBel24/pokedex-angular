@@ -1,38 +1,908 @@
 {
   "pokemons": [
-      { "id": 1, "name": "Bulbizarre", "life": 25, "damage": 5, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png", "types": ["Plante", "Poison"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 2, "name": "Herbizarre", "life": 30, "damage": 8, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png", "types": ["Plante", "Poison"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 3, "name": "Florizarre", "life": 45, "damage": 12, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png", "types": ["Plante", "Poison"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 4, "name": "Salamèche", "life": 22, "damage": 6, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png", "types": ["Feu"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 5, "name": "Reptincel", "life": 30, "damage": 9, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png", "types": ["Feu"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 6, "name": "Dracaufeu", "life": 50, "damage": 15, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png", "types": ["Feu", "Vol"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 7, "name": "Carapuce", "life": 24, "damage": 5, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png", "types": ["Eau"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 8, "name": "Carabaffe", "life": 35, "damage": 8, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png", "types": ["Eau"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 9, "name": "Tortank", "life": 52, "damage": 12, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png", "types": ["Eau"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 10, "name": "Chenipan", "life": 10, "damage": 2, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png", "types": ["Insecte"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 11, "name": "Chrysacier", "life": 15, "damage": 1, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png", "types": ["Insecte"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 12, "name": "Papilusion", "life": 30, "damage": 7, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png", "types": ["Insecte", "Vol"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 13, "name": "Aspicot", "life": 10, "damage": 3, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png", "types": ["Insecte", "Poison"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 14, "name": "Coconfort", "life": 15, "damage": 1, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png", "types": ["Insecte", "Poison"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 15, "name": "Dardargnan", "life": 35, "damage": 9, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png", "types": ["Insecte", "Poison"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 16, "name": "Roucool", "life": 15, "damage": 4, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png", "types": ["Normal", "Vol"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 17, "name": "Roucoups", "life": 25, "damage": 7, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/017.png", "types": ["Normal", "Vol"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 18, "name": "Roucarnage", "life": 40, "damage": 12, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/018.png", "types": ["Normal", "Vol"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 19, "name": "Rattata", "life": 12, "damage": 3, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png", "types": ["Normal"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 20, "name": "Rattatac", "life": 28, "damage": 7, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/020.png", "types": ["Normal"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 21, "name": "Piafabec", "life": 12, "damage": 4, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png", "types": ["Normal", "Vol"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 22, "name": "Rapasdepic", "life": 35, "damage": 9, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/022.png", "types": ["Normal", "Vol"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 23, "name": "Abo", "life": 20, "damage": 6, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png", "types": ["Poison"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 24, "name": "Arbok", "life": 35, "damage": 9, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/024.png", "types": ["Poison"], "created": "2024-09-30T00:00:00Z" },
-      { "id": 25, "name": "Pikachu", "life": 25, "damage": 8, "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png", "types": ["Électrik"], "created": "2024-09-30T00:00:00Z" },
-      { 
-        "id": 26, 
-        "name": "Raichu", 
-        "life": 40, 
-        "damage": 10, 
-        "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/026.png", 
-        "types": ["Électrik"], 
-        "created": "2024-09-30T00:00:00Z" 
-      }
-    ]
+    {
+      "id": 1,
+      "name": "Bulbizarre",
+      "life": 25,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Herbizarre",
+      "life": 30,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Florizarre",
+      "life": 45,
+      "damage": 12,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Salamèche",
+      "life": 22,
+      "damage": 6,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png",
+      "types": [
+        "Feu"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Reptincel",
+      "life": 30,
+      "damage": 9,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png",
+      "types": [
+        "Feu"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Dracaufeu",
+      "life": 50,
+      "damage": 15,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png",
+      "types": [
+        "Feu",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Carapuce",
+      "life": 24,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
+      "types": [
+        "Eau"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Carabaffe",
+      "life": 35,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png",
+      "types": [
+        "Eau"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Tortank",
+      "life": 52,
+      "damage": 12,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png",
+      "types": [
+        "Eau"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Chenipan",
+      "life": 10,
+      "damage": 2,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png",
+      "types": [
+        "Insecte"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 11,
+      "name": "Chrysacier",
+      "life": 15,
+      "damage": 1,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png",
+      "types": [
+        "Insecte"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 12,
+      "name": "Papilusion",
+      "life": 30,
+      "damage": 7,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png",
+      "types": [
+        "Insecte",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 13,
+      "name": "Aspicot",
+      "life": 10,
+      "damage": 3,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png",
+      "types": [
+        "Insecte",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 14,
+      "name": "Coconfort",
+      "life": 15,
+      "damage": 1,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png",
+      "types": [
+        "Insecte",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 15,
+      "name": "Dardargnan",
+      "life": 35,
+      "damage": 9,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png",
+      "types": [
+        "Insecte",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 16,
+      "name": "Roucool",
+      "life": 15,
+      "damage": 4,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png",
+      "types": [
+        "Normal",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 17,
+      "name": "Roucoups",
+      "life": 25,
+      "damage": 7,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/017.png",
+      "types": [
+        "Normal",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 18,
+      "name": "Roucarnage",
+      "life": 40,
+      "damage": 12,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/018.png",
+      "types": [
+        "Normal",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 19,
+      "name": "Rattata",
+      "life": 12,
+      "damage": 3,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png",
+      "types": [
+        "Normal"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 20,
+      "name": "Rattatac",
+      "life": 28,
+      "damage": 7,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/020.png",
+      "types": [
+        "Normal"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 21,
+      "name": "Piafabec",
+      "life": 12,
+      "damage": 4,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png",
+      "types": [
+        "Normal",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 22,
+      "name": "Rapasdepic",
+      "life": 35,
+      "damage": 9,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/022.png",
+      "types": [
+        "Normal",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 23,
+      "name": "Abo",
+      "life": 20,
+      "damage": 6,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png",
+      "types": [
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 24,
+      "name": "Arbok",
+      "life": 35,
+      "damage": 9,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/024.png",
+      "types": [
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 25,
+      "name": "Pikachu",
+      "life": 25,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
+      "types": [
+        "Électrik"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 26,
+      "name": "Raichu",
+      "life": 40,
+      "damage": 10,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/026.png",
+      "types": [
+        "Électrik"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 27,
+      "name": "Sabelette",
+      "life": 20,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png",
+      "types": [
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 28,
+      "name": "Sablaireau",
+      "life": 35,
+      "damage": 9,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/028.png",
+      "types": [
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 29,
+      "name": "Nidoran♀",
+      "life": 18,
+      "damage": 4,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/029.png",
+      "types": [
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 30,
+      "name": "Nidorina",
+      "life": 32,
+      "damage": 7,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/030.png",
+      "types": [
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 31,
+      "name": "Nidoqueen",
+      "life": 50,
+      "damage": 13,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/031.png",
+      "types": [
+        "Poison",
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 32,
+      "name": "Nidoran♂",
+      "life": 18,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/032.png",
+      "types": [
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 33,
+      "name": "Nidorino",
+      "life": 32,
+      "damage": 7,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/033.png",
+      "types": [
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 34,
+      "name": "Nidoking",
+      "life": 50,
+      "damage": 13,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/034.png",
+      "types": [
+        "Poison",
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 35,
+      "name": "Mélofée",
+      "life": 25,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png",
+      "types": [
+        "Fée"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 36,
+      "name": "Mélodelfe",
+      "life": 40,
+      "damage": 9,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/036.png",
+      "types": [
+        "Fée"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 37,
+      "name": "Goupix",
+      "life": 20,
+      "damage": 6,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png",
+      "types": [
+        "Feu"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 38,
+      "name": "Feunard",
+      "life": 40,
+      "damage": 12,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/038.png",
+      "types": [
+        "Feu"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 39,
+      "name": "Rondoudou",
+      "life": 25,
+      "damage": 4,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/039.png",
+      "types": [
+        "Normal",
+        "Fée"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 40,
+      "name": "Grodoudou",
+      "life": 40,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/040.png",
+      "types": [
+        "Normal",
+        "Fée"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 41,
+      "name": "Nosferapti",
+      "life": 15,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/041.png",
+      "types": [
+        "Poison",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 42,
+      "name": "Nosferalto",
+      "life": 35,
+      "damage": 10,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/042.png",
+      "types": [
+        "Poison",
+        "Vol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 43,
+      "name": "Mystherbe",
+      "life": 18,
+      "damage": 4,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/043.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 44,
+      "name": "Ortide",
+      "life": 28,
+      "damage": 6,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/044.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 45,
+      "name": "Rafflesia",
+      "life": 45,
+      "damage": 11,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/045.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 46,
+      "name": "Paras",
+      "life": 20,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/046.png",
+      "types": [
+        "Insecte",
+        "Plante"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 47,
+      "name": "Parasect",
+      "life": 40,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/047.png",
+      "types": [
+        "Insecte",
+        "Plante"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 48,
+      "name": "Mimitoss",
+      "life": 20,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/048.png",
+      "types": [
+        "Insecte",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 49,
+      "name": "Aéromite",
+      "life": 40,
+      "damage": 9,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/049.png",
+      "types": [
+        "Insecte",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 50,
+      "name": "Taupiqueur",
+      "life": 10,
+      "damage": 4,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/050.png",
+      "types": [
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 51,
+      "name": "Triopikeur",
+      "life": 30,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/051.png",
+      "types": [
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 52,
+      "name": "Miaouss",
+      "life": 15,
+      "damage": 3,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/052.png",
+      "types": [
+        "Normal"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 53,
+      "name": "Persian",
+      "life": 35,
+      "damage": 7,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/053.png",
+      "types": [
+        "Normal"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 54,
+      "name": "Psykokwak",
+      "life": 25,
+      "damage": 6,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/054.png",
+      "types": [
+        "Eau"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 55,
+      "name": "Akwakwak",
+      "life": 45,
+      "damage": 10,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/055.png",
+      "types": [
+        "Eau"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 56,
+      "name": "Férosinge",
+      "life": 20,
+      "damage": 6,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/056.png",
+      "types": [
+        "Combat"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 57,
+      "name": "Colossinge",
+      "life": 40,
+      "damage": 10,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/057.png",
+      "types": [
+        "Combat"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 58,
+      "name": "Caninos",
+      "life": 25,
+      "damage": 7,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/058.png",
+      "types": [
+        "Feu"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 59,
+      "name": "Arcanin",
+      "life": 55,
+      "damage": 15,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/059.png",
+      "types": [
+        "Feu"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 60,
+      "name": "Ptitard",
+      "life": 15,
+      "damage": 4,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/060.png",
+      "types": [
+        "Eau"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 61,
+      "name": "Têtarte",
+      "life": 30,
+      "damage": 6,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/061.png",
+      "types": [
+        "Eau"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 62,
+      "name": "Tartard",
+      "life": 50,
+      "damage": 12,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/062.png",
+      "types": [
+        "Eau",
+        "Combat"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 63,
+      "name": "Abra",
+      "life": 15,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/063.png",
+      "types": [
+        "Psy"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 64,
+      "name": "Kadabra",
+      "life": 30,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/064.png",
+      "types": [
+        "Psy"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 65,
+      "name": "Alakazam",
+      "life": 45,
+      "damage": 13,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/065.png",
+      "types": [
+        "Psy"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 66,
+      "name": "Machoc",
+      "life": 20,
+      "damage": 6,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/066.png",
+      "types": [
+        "Combat"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 67,
+      "name": "Machopeur",
+      "life": 40,
+      "damage": 9,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/067.png",
+      "types": [
+        "Combat"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 68,
+      "name": "Mackogneur",
+      "life": 55,
+      "damage": 14,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/068.png",
+      "types": [
+        "Combat"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 69,
+      "name": "Chétiflor",
+      "life": 20,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/069.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 70,
+      "name": "Boustiflor",
+      "life": 35,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/070.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 71,
+      "name": "Empiflor",
+      "life": 50,
+      "damage": 12,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/071.png",
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 72,
+      "name": "Tentacool",
+      "life": 20,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/072.png",
+      "types": [
+        "Eau",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 73,
+      "name": "Tentacruel",
+      "life": 45,
+      "damage": 10,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/073.png",
+      "types": [
+        "Eau",
+        "Poison"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 74,
+      "name": "Racaillou",
+      "life": 20,
+      "damage": 5,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/074.png",
+      "types": [
+        "Roche",
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 75,
+      "name": "Gravalanch",
+      "life": 35,
+      "damage": 8,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/075.png",
+      "types": [
+        "Roche",
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 76,
+      "name": "Grolem",
+      "life": 55,
+      "damage": 13,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/076.png",
+      "types": [
+        "Roche",
+        "Sol"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 77,
+      "name": "Ponyta",
+      "life": 25,
+      "damage": 7,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/077.png",
+      "types": [
+        "Feu"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "id": 78,
+      "name": "Galopa",
+      "life": 50,
+      "damage": 12,
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/078.png",
+      "types": [
+        "Feu"
+      ],
+      "created": "2024-09-30T00:00:00Z"
+    },
+    {
+      "name": "Arceus",
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/493.png",
+      "life": 60,
+      "damage": 20,
+      "types": [
+        "Normal"
+      ],
+      "created": "2024-09-30T21:45:37.960Z",
+      "id": 79
+    }
+  ]
 }
