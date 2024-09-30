@@ -38,7 +38,7 @@
                         <button class="btn btn-link text-decoration-none text-primary" routerLink="/pokemons">
                             RETOUR
                         </button>
-                        <button class="btn btn-link text-decoration-none text-info" [routerLink]="['/pokemon/edit', pokemon.id]">
+                        <button class="btn btn-link text-decoration-none text-info" [routerLink]="['/pokemons/edit', pokemon.id]">
                             EDITER
                         </button>
                         <button class="btn btn-link text-decoration-none text-warning" (click)="deletePokemon(pokemon.id)">

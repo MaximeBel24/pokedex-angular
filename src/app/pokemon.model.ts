@@ -37,7 +37,7 @@ export const POKEMON_RULES = {
   NAME_PATTERN: /^[a-zA-Zéè]+$/,
   MAX_NAME: 20,
   MIN_NAME: 3,
-  MAX_LIFE: 30,
+  MAX_LIFE: 60,
   HIGH_LIFE: 25,
   LOW_LIFE: 15,
   MIN_LIFE: 10,
